@@ -15,8 +15,6 @@ public class Backend {
             }
             catch (InputMismatchException ex) {
                 //message "You must enter an integer"
-                scanner.next();
-
             }
         }
     }
