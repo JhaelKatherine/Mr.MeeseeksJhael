@@ -7,6 +7,7 @@ public class Backend {
         int number;
         while(true)
         {
+
             try {
                 //message "Enter a Number"
                 number=  scanner.nextInt();
@@ -20,7 +21,4 @@ public class Backend {
         }
     }
 
-
-    public static void main(String[] args) {
-
-}}
+}
