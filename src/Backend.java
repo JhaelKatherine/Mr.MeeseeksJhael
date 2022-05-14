@@ -2,21 +2,25 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Backend {
-    public void inputNumber(){
+    protected int inputNumber(){
         Scanner scanner = new Scanner(System.in);
-        boolean execute;
-        do {
+        int number;
+        while(true)
+        {
             try {
-                execute = false;
                 //message "Enter a Number"
-                int number=  scanner.nextInt();
+                number=  scanner.nextInt();
+                return number;
             }
             catch (InputMismatchException ex) {
                 //message "You must enter an integer"
                 scanner.next();
-                execute = true;
-            }
-        } while (execute);
 
+            }
+        }
     }
-}
+
+
+    public static void main(String[] args) {
+
+}}
